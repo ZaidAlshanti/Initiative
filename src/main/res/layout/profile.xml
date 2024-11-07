@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:fitsSystemWindows="true"
+            android:id="@+id/rectangle_2"
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:background="#009688"
+            android:elevation="1dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_1"
+                android:contentDescription="Account"
+                android:elevation="5dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_2"
+                android:contentDescription="Settings"
+                android:elevation="5dp" />
+        </LinearLayout>
+
+
+        <!-- Ensure buttons are placed above rectangle_1 -->
+
+
+<ImageView
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:layout_centerInParent="true"
+    android:src="@drawable/img_9">
+
+</ImageView>
+
+        <Button
+            android:id="@+id/map"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/img_4"
+            android:contentDescription="@android:string/unknownName"
+            android:elevation="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="65dp" />
+
+        <Button
+            android:id="@+id/friends"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/img_5"
+            android:contentDescription="Friends Activities"
+            android:elevation="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp" />
+
+        <!-- Ensure unique ID -->
+        <Button
+            android:id="@+id/second_home"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/img_3"
+            android:contentDescription="Home"
+            android:elevation="1dp"
+            android:layout_marginLeft="5dp" />
+
+        <!-- Place rectangle at the very bottom -->
+        <View
+            android:id="@+id/rectangle_1"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="1dp"
+            android:background="#009688"
+            android:elevation="1dp" />
+
+    </RelativeLayout>
+</LinearLayout>
